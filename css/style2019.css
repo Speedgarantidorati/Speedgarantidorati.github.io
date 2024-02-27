@@ -1247,9 +1247,14 @@ img.svg {
 	color : #00b8e4;
 }
 
+
 .edina_tm_services_wrap ul.total .inner_list span {
 	position: absolute;
 }
+
+
+
+
 
 .edina_tm_services_wrap ul.total .inner_list .first {
 	top : 0px;
@@ -1371,7 +1376,7 @@ img.svg {
 	height         : auto;
 	text-align     : center;
 	list-style-type: none;
-	margin         : 0px 0px 10px 0px;
+	margin         : 30px 0px 40px 0px;
 
 	-webkit-box-sizing: border-box;
 	/* Safari/Chrome, other WebKit */
@@ -1383,7 +1388,7 @@ img.svg {
 
 .edina_tm_portfolio_filter li {
 	display: inline-block;
-	margin : 0px 55px 13px 0px;
+	margin : 0px 100px 13px 0px;
 }
 
 .edina_tm_portfolio_filter li:last-child {
@@ -1493,20 +1498,9 @@ img.svg {
 }
 
 .edina_tm_portfolio_list>li:nth-child(3) .image_wrap .main_image {
-	background-image: url(/=/img/portfolio/3.jpg);
+	background-image: url(https://www.youtube.com/watch?v=QKklke8b-U4);
 }
 
-.edina_tm_portfolio_list>li:nth-child(4) .image_wrap .main_image {
-	background-image: url(/=/img/portfolio/4.jpg);
-}
-
-.edina_tm_portfolio_list>li:nth-child(5) .image_wrap .main_image {
-	background-image: url(/=/img/portfolio/5.jpg);
-}
-
-.edina_tm_portfolio_list>li:nth-child(6) .image_wrap .main_image {
-	background-image: url(/=/img/portfolio/6.jpg);
-}
 
 .edina_tm_portfolio_list .list_inner .definition_portfolio {
 	position        : absolute;
@@ -1826,6 +1820,39 @@ img.svg {
 	color: #00b8e4;
 }
 
+.button_saiba{
+	color           : #fff;
+	text-decoration : none;
+	background-color: #00b8e4;
+	padding         : 8px 25px;
+
+	font-family     : "Montserrat";
+	font-weight     : 500;
+	border-radius   : 3px;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition   : all .3s ease;
+	-ms-transition    : all .3s ease;
+	-o-transition     : all .3s ease;
+	transition        : all .3s ease;
+
+}
+
+
+.text_mens{
+
+    position: relative;
+    text-align: left;
+    color: rgb(50, 59, 73);
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
+    font-size: calc(16.63px + 0.74vw);
+    line-height: calc(29.63px + 0.74vw);
+	opacity: 0.9;
+	top: -35px;							
+}
+
+
 .edina_tm_news_wrap .read_more a {
 	color           : #fff;
 	text-decoration : none;
@@ -1909,7 +1936,9 @@ img.svg {
 	float   : left;
 	clear   : both;
 	position: relative;
+
 }
+
 
 #edina_tm_popup_blog .date_wrap p {
 	color      : #eee;
@@ -2150,7 +2179,7 @@ img.svg {
 	height          : auto;
 	clear           : both;
 	background-color: rgb(0, 13, 139);
-	padding         : 120px 0px 100px 0px;
+	padding         : 65px 0px 100px 0px;
 	border-radius: 10px;
 
 	-webkit-box-sizing: border-box;
@@ -2163,7 +2192,7 @@ img.svg {
 
 
 .entre_from{
-	padding: 20px;
+	padding: 5px 80px 50px 80px;
 }
 
 .edina_tm_work_together_wrap {
@@ -2243,18 +2272,42 @@ img.svg {
 
 
 .entre_text_div_class{
-	padding-left: 40px;
-	display: flex;
-	flex-wrap: wrap;
+	position: relative;
+	margin-bottom: 20px;
 }
 
 .entre_text{
-	height: 30px;
-    border: 1px solid rgb(169, 169, 169);
-    border-radius: 5%;
-    margin-bottom: 10px;
-    color: rgb(28, 31, 36);
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
+
+
+label {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: #464444;
+	pointer-events: none;
+	transition: top 0.3s, font-size 0.3s, color 0.3s;
+
+	padding: 10px;
+
+
+  }
+
+  .entre_text:focus + label {
+
+	font-size: 0px;
+	color: #ffffff;
+	padding: 10px;
+
+
+  }
+
+
 
 .edina_tm_wor22 {
 	width: 90%;
@@ -2273,6 +2326,7 @@ img.svg {
 	-o-transition     : all .3s ease;
 	transition        : all .3s ease;
 	border: none;
+	margin-top: 10px
 }
 
 
@@ -2665,7 +2719,21 @@ img.svg {
 /*	16) EDINA MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 
-@media (max-width: 1400px) {
+@media (max-width: 2560px) {
+
+	.social_icons_wrap ul li{
+		text-align: right;
+	}
+
+
+}
+
+@media (max-width: 1440px) {
+
+	.social_icons_wrap ul li{
+		text-align: right;
+	}
+
 	.edina_tm_to_top_wrap {
 		position: relative;
 		float   : right;
@@ -2678,6 +2746,12 @@ img.svg {
 }
 
 @media (max-width: 1200px) {
+
+
+	.social_icons_wrap ul li{
+		text-align: right;
+	}
+
 	.edina_tm_about_wrap .rightbox {
 		padding: 0px 70px 0px 0px;
 	}
@@ -2688,6 +2762,12 @@ img.svg {
 }
 
 @media (max-width: 1040px) {
+
+
+	.social_icons_wrap ul li{
+		text-align: right;
+	}
+
 	.edina_tm_trigger {
 		display: block;
 	}
@@ -2745,6 +2825,16 @@ img.svg {
 }
 
 @media (max-width: 768px) {
+
+	.social_icons_wrap ul li{
+		text-align: right;
+	}
+
+
+
+
+
+
 	.edina_tm_navigation_wrap {
 		padding: 25px 0px;
 	}
@@ -2848,12 +2938,40 @@ img.svg {
 }
 
 @media (max-width: 480px) {
+
+	.edina_tm_work_together_wrap{
+		width: 98%;
+	}
+	.dark_logo{
+		position: relative;
+		top: 5px;
+	}
+
+	.entre_from {
+		padding: 5px 40px 50px 40px;
+	}
+
+	.edina_tm_work_together_wrap h3{
+		font-size: 22px;
+	}
+
+	.social_icons_wrap ul li{
+		text-align: center;
+		position: relative;
+	}
+
+
+
+
+
+
+
 	.edina_tm_universal_box_wrap .hero_title {
 		max-width: 60%;
 	}
 
 	.edina_tm_navigation_wrap {
-		padding: 20px 0px;
+		padding: 10px 0px;
 	}
 
 	.edina_tm_top_bar_wrap ul li {
